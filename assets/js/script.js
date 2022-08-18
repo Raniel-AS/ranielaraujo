@@ -149,7 +149,7 @@ class Projects {
         const viewProj = document.querySelector('.view-project');
         const descProj = document.querySelector('.description-project');
 
-        document.addEventListener('click', e => {
+                document.addEventListener('click', e => {
             const el = e.target;
             if (el.id === "ta-na-mao") {
                 viewProj.innerText = "";
@@ -157,13 +157,13 @@ class Projects {
                  descProj.innerText = "Tá na mão: Página Web que hospeda anúncios locais, atendendo inicialmente "
                  + "uma comunidade periférica, voltado a micro produtores (microempreendedores) e "
                  + "prestadores de serviço, com acesso por meio de computadores e dispositivos móveis.";
-                const video = document.createElement('video');
-                const source = document.createElement('source');
-                source.setAttribute('src', "https://onedrive.live.com/?cid=1754863C7E527E44&id=1754863C7E527E44%21263&parId=1754863C7E527E44%21262&o=OneUp")
-                source.setAttribute('type', 'video/mp4');
-                video.setAttribute('controls', "");
-                video.appendChild(source);
-                viewProj.appendChild(video);
+                const iframe = document.createElement('iframe');
+                iframe.setAttribute('src', "https://www.youtube.com/embed/kzish_hRkqM");
+                iframe.setAttribute('title', "YouTube video player");
+                iframe.setAttribute('frameborder', '0');
+                iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                iframe.setAttribute('allowfullscreen', '');
+                viewProj.appendChild(iframe);
             }
             if (el.id === "portfolio1") {
                 viewProj.innerText = "";
@@ -172,14 +172,14 @@ class Projects {
                  + "da minha caminhada na programação. Sabia utilizar basicamente o CSS e HTML "
                  + "Mas desde o primeiro projeto trabalhei com responsividade.";
 
-                const video = document.createElement('video');
-                const source = document.createElement('source');
-                source.setAttribute('src', "https://youtu.be/PDZ49QSlF8E")
-                source.setAttribute('type', 'video/mp4');
-                video.setAttribute('controls', "");
-                video.appendChild(source);
-                viewProj.appendChild(video);
-            }
+                 const iframe = document.createElement('iframe');
+                 iframe.setAttribute('src', "https://www.youtube.com/embed/PDZ49QSlF8E");
+                 iframe.setAttribute('title', "YouTube video player");
+                 iframe.setAttribute('frameborder', '0');
+                 iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                 iframe.setAttribute('allowfullscreen', '');
+                 viewProj.appendChild(iframe);
+             }
 
             if (el.id === "portfolio2") {
                 viewProj.innerText = "";
@@ -188,14 +188,14 @@ class Projects {
                  + "Começando a estudar JavaScript. Também é um projeto que conta com a responsividade. "
                  + "\nJá dá pra notar alguma melhora, hein!?";
 
-                const video = document.createElement('video');
-                const source = document.createElement('source');
-                source.setAttribute('src', "https://youtu.be/vD2sHXB_c4M")
-                source.setAttribute('type', 'video/mp4');
-                video.setAttribute('controls', "");
-                video.appendChild(source);
-                viewProj.appendChild(video);
-            }
+                 const iframe = document.createElement('iframe');
+                 iframe.setAttribute('src', "https://www.youtube.com/embed/vD2sHXB_c4M");
+                 iframe.setAttribute('title', "YouTube video player");
+                 iframe.setAttribute('frameborder', '0');
+                 iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                 iframe.setAttribute('allowfullscreen', '');
+                 viewProj.appendChild(iframe);
+             }
 
             if (el.id === "tracking") {
                 viewProj.innerText = "";
@@ -206,14 +206,14 @@ class Projects {
                  + "O objetivo era mostrar o ultimo posicionamento no mapa, último status, modelo e historico de status.";
 
 
-                const video = document.createElement('video');
-                const source = document.createElement('source');
-                source.setAttribute('src', "https://youtu.be/vF0V7XCUsvg")
-                source.setAttribute('type', 'video/mp4');
-                video.setAttribute('controls', "");
-                video.appendChild(source);
-                viewProj.appendChild(video);
-            }
+                 const iframe = document.createElement('iframe');
+                 iframe.setAttribute('src', "https://www.youtube.com/embed/vF0V7XCUsvg");
+                 iframe.setAttribute('title', "YouTube video player");
+                 iframe.setAttribute('frameborder', '0');
+                 iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                 iframe.setAttribute('allowfullscreen', '');
+                 viewProj.appendChild(iframe);
+             }
 
             if (el.id === "contacts") {
                 viewProj.innerText = "";
@@ -238,6 +238,7 @@ class Projects {
             }
 
         })
+
     }
 
     
