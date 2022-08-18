@@ -159,7 +159,7 @@ class Projects {
                  + "prestadores de serviço, com acesso por meio de computadores e dispositivos móveis.";
                 const video = document.createElement('video');
                 const source = document.createElement('source');
-                source.setAttribute('src', "../assets/video/tanamao.mp4")
+                source.setAttribute('src', "https://youtu.be/kzish_hRkqM")
                 source.setAttribute('type', 'video/mp4');
                 video.setAttribute('controls', "");
                 video.appendChild(source);
@@ -174,7 +174,7 @@ class Projects {
 
                 const video = document.createElement('video');
                 const source = document.createElement('source');
-                source.setAttribute('src', "../assets/video/portfolio1.mp4")
+                source.setAttribute('src', "https://youtu.be/PDZ49QSlF8E")
                 source.setAttribute('type', 'video/mp4');
                 video.setAttribute('controls', "");
                 video.appendChild(source);
@@ -190,7 +190,7 @@ class Projects {
 
                 const video = document.createElement('video');
                 const source = document.createElement('source');
-                source.setAttribute('src', "../assets/video/portfolio2.mp4")
+                source.setAttribute('src', "https://youtu.be/vD2sHXB_c4M")
                 source.setAttribute('type', 'video/mp4');
                 video.setAttribute('controls', "");
                 video.appendChild(source);
@@ -208,7 +208,7 @@ class Projects {
 
                 const video = document.createElement('video');
                 const source = document.createElement('source');
-                source.setAttribute('src', "../assets/video/rastreamento.mp4")
+                source.setAttribute('src', "https://youtu.be/vF0V7XCUsvg")
                 source.setAttribute('type', 'video/mp4');
                 video.setAttribute('controls', "");
                 video.appendChild(source);
